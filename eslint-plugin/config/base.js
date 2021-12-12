@@ -15,7 +15,7 @@ module.exports = {
 	],
 	rules: {
 		semi: ['error', 'always'],
-		indent: ['error', 'tab'],
+		indent: ['error', 'tab', { SwitchCase: 1 }],
 		quotes: ['error', 'single', { avoidEscape: true }],
 		'quote-props': ['error', 'as-needed'],
 		'no-console': [
