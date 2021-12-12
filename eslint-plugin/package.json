@@ -1,0 +1,23 @@
+{
+  "name": "@frux/eslint-plugin",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:frux/dotfiles.git",
+    "directory": "eslint-plugin"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-react": "^7.27.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.4.1"
+  }
+}
