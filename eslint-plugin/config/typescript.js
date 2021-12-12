@@ -7,8 +7,6 @@ module.exports = {
 		'@typescript-eslint',
 	],
 	rules: {
-		'no-use-before-define': 'off',
-		'@typescript-eslint/no-use-before-define': 'error',
 		'comma-dangle': 'off',
 		'@typescript-eslint/comma-dangle': [
 			'error',
@@ -21,6 +19,18 @@ module.exports = {
 				tuples: 'always-multiline',
 				generics: 'always-multiline',
 				functions: 'never',
+			},
+		],
+		'no-use-before-define': 'off',
+		'@typescript-eslint/no-use-before-define': [
+			'error',
+			{
+				classes: false,
+				enums: false,
+				functions: false,
+				typedefs: false,
+				variables: true,
+				ignoreTypeReferences: true,
 			},
 		],
 		'@typescript-eslint/member-delimiter-style': [

@@ -38,7 +38,14 @@ module.exports = {
 				functions: 'never',
 			},
 		],
-		'no-use-before-define': 'error',
+		'no-use-before-define': [
+			'error',
+			{
+				classes: false,
+				functions: false,
+				variables: true,
+			},
+		],
 		'eslint-comments/no-unused-disable': 'error',
 		'object-curly-spacing': [
 			'error',
